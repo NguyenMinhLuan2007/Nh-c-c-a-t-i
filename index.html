@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Web nghe nhạc của Luân</title>
+    <style>
+        /* TẠO VIỀN ĐEN BAO QUANH TOÀN TRANG */
+        html {
+            background-color: black; /* Màu của viền ngoài cùng */
+            height: 100%;
+            overflow: hidden;
+        }
+        body {
+            margin: 0;
+            padding: 4px; /* Độ dày của viền đen bao quanh (4px) */
+            height: 100%;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<frameset rows="80,*,40" frameborder="1" border="2" framespacing="2" bordercolor="black">
+    
+    <frame src="tieude.html" name="tieude" scrolling="no"></frame>
+
+    <frameset cols="20%,70%,10%" frameborder="1" border="2" framespacing="2" bordercolor="black">
+        <frame src="menu.html" name="menu" scrolling="no"></frame>
+        <frame src="khungphai.html" name="main"></frame>
+        <frame src="trangphu.html" name="side" scrolling="no"></frame>
+    </frameset>
+
+    <frame src="tacgia.html" name="tacgia" scrolling="no"></frame>
+
+</frameset>
+
+<noframes>
+    <body>Trình duyệt không hỗ trợ frameset.</body>
+</noframes>
+</html>
